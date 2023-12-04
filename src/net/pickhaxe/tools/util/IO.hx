@@ -284,7 +284,7 @@ class IO
 
   /**
    * Copy a file from one location to another
-   * , requesting administrative access.
+   *, requesting administrative access in the process. (Unix Only)
    * @param source The path to the file to copy.
    * @param dest The path to copy the file to.
    */
@@ -294,7 +294,7 @@ class IO
   }
 
   /*
-  * Update permissions for file to not require administration access. (Unix only)
+  * Update permissions for the file to not require administration access. (Unix only)
   * @param path The path to the file to update permissions for.
   */
   public static function updatePermissions(path:Path):Void
