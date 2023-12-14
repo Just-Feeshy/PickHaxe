@@ -553,6 +553,8 @@ class Build implements ICommand
     {
       var isExtern:String = !dependency.isExtern ? '' : '-extern';
 
+      trace("Testing extern: " + isExtern);
+
       if (dependency.value.endsWith('.jar'))
       {
         args = args.concat(['--java-lib' + isExtern, '${dependency.value}']);
