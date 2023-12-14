@@ -551,7 +551,7 @@ class Build implements ICommand
     // Include the user's dependencies.
     for (dependency in defines.pickhaxe.mod.dependencies)
     {
-      var isExtern:String = !dependency.extern ? '' : '-extern';
+      var isExtern:String = !dependency.externLib ? '' : '-extern';
 
       if (dependency.value.endsWith('.jar'))
       {

@@ -180,5 +180,5 @@ typedef ModDependency =
   /**
    * Should the dependency be external.
    */
-  @:optional @:attr var extern:Bool;
+  @:optional @:attr var externLib:Bool;
 };
