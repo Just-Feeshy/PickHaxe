@@ -176,4 +176,9 @@ typedef ModLicense =
 typedef ModDependency =
 {
   > ValueTag,
+
+  /**
+   * Should the dependency be external.
+   */
+  @:optional @:attr var isExtern:Bool;
 };
