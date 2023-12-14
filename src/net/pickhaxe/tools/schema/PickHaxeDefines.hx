@@ -541,7 +541,7 @@ class Builder
 
               entryPoints: projectFile.entryPoints,
 
-              dependencies: projectFile?.dependencies.value ?? [],
+              dependencies: projectFile?.dependencies ?? [],
 
               license: projectFile?.license?.value ?? 'All Rights Reserved',
 
